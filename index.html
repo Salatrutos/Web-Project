@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AvaliaCar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h1>AvaliaCar</h1>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#avaliacao">Avaliar veículo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-text">
+
+                <h2>Descubra o custo de manter seu veículo</h2>
+
+                <p>
+                    Consulte informações básicas e tenha uma estimativa
+                    dos custos de manutenção do seu veículo.
+                </p>
+
+                <a href="#avaliacao" class="botao">
+                    Avaliar veículo
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="avaliacao" class="avaliacao">
+
+            <h2>Avalie seu veículo</h2>
+
+            <p>
+                Preencha os dados abaixo para receber uma estimativa.
+            </p>
+
+
+            <form id="formulario">
+
+                <div class="campo">
+
+                    <label for="veiculo">
+                        Modelo do veículo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="veiculo"
+                        placeholder="Ex: Honda Hornet 2005"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="km">
+                        Quilometragem
+                    </label>
+
+                    <input
+                        type="number"
+                        id="km"
+                        placeholder="Ex: 50000"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="uso">
+                        Intensidade de uso
+                    </label>
+
+                    <select id="uso">
+
+                        <option value="baixo">
+                            Baixo
+                        </option>
+
+                        <option value="medio">
+                            Médio
+                        </option>
+
+                        <option value="alto">
+                            Alto
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit">
+                    Calcular estimativa
+                </button>
+
+            </form>
+
+
+            <div id="resultado" class="resultado">
+
+                <h3>Resultado</h3>
+
+                <p id="mensagem">
+                    Preencha o formulário para realizar a avaliação.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="sobre" class="sobre">
+
+            <h2>Sobre o AvaliaCar</h2>
+
+            <p>
+                O AvaliaCar é um projeto acadêmico desenvolvido para
+                demonstrar como tecnologias web podem ser utilizadas
+                para organizar informações sobre veículos e seus
+                custos de manutenção.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 AvaliaCar - Projeto acadêmico
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
