@@ -3,6 +3,43 @@ const formulario = document.getElementById("formulario");
 const resultado = document.getElementById("resultado");
 
 const mensagem = document.getElementById("mensagem");
+const motos = [
+    {
+        marca: "Honda",
+        modelo: "Hornet 600",
+        ano: 2005,
+        cilindrada: 599,
+        combustivel: "Gasolina",
+        manutencao: 2500
+    },
+
+    {
+        marca: "Honda",
+        modelo: "XRE 300",
+        ano: 2012,
+        cilindrada: 291,
+        combustivel: "Gasolina",
+        manutencao: 1800
+    },
+
+    {
+        marca: "Yamaha",
+        modelo: "Fazer 250",
+        ano: 2025,
+        cilindrada: 249,
+        combustivel: "Flex",
+        manutencao: 1200
+    },
+
+    {
+        marca: "Honda",
+        modelo: "CG 160",
+        ano: 2025,
+        cilindrada: 162,
+        combustivel: "Flex",
+        manutencao: 1000
+    }
+];
 
 
 formulario.addEventListener("submit", function(event) {
